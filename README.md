@@ -134,57 +134,6 @@ diamond-price-predictor/
    
    Open your browser and navigate to: `http://localhost:7860`
 
----
-
-## 🤗 Deploy to Hugging Face Spaces
-
-Deploying to Hugging Face Spaces is straightforward thanks to the pre-configured Docker setup.
-
-### Step-by-Step Deployment
-
-1. **Create a Hugging Face Account**
-   - Sign up at [huggingface.co](https://huggingface.co) if you haven't already
-
-2. **Create a New Space**
-   - Go to [huggingface.co/new-space](https://huggingface.co/new-space)
-   - Choose a name for your Space (e.g., `diamond-price-predictor`)
-   - Select **Docker** as the SDK
-   - Choose **Blank** template
-   - Set visibility (Public or Private)
-   - Click **Create Space**
-
-3. **Clone Your Space Repository**
-   ```bash
-   git clone https://huggingface.co/spaces/YOUR_USERNAME/diamond-price-predictor
-   cd diamond-price-predictor
-   ```
-
-4. **Copy Project Files**
-   ```bash
-   # Copy all project files to the cloned Space directory
-   cp -r /path/to/your/project/* .
-   ```
-
-5. **Push to Hugging Face**
-   ```bash
-   git add .
-   git commit -m "Initial deployment"
-   git push
-   ```
-
-6. **Monitor Deployment**
-   - Go to your Space's page on Hugging Face
-   - Watch the build logs in the "Logs" tab
-   - Once complete, your app will be live!
-
-### Environment Configuration
-
-The application is pre-configured for Hugging Face Spaces:
-- **Port**: 7860 (Hugging Face default)
-- **SDK**: Docker
-- **Build**: Automatic via Dockerfile
-
----
 
 ## 📊 Input Features
 
